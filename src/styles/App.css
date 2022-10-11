@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(24,42,59);
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    border-radius: 11px;
+    margin: 10%;
+    
+}
+.community{
+    background-color: rgb(255, 253, 253);
+    text-align: center;
+    padding: 10%;
+    border-radius:11px 11px 0 0;
+}
+.why-us{
+    background-color: rgba(85, 145, 142, 0.698);
+    padding: 12%;
+    border-radius:0 0 11px 0;
+    text-align: center;
+}
+.card{
+    background-color: rgb(15, 67, 66);
+    padding: 12%;
+    border-radius:0 0 0 11px;
+}
+.card-details{
+    color: white;
+    display: flex;
+    
+}
+.community-header{
+    color: rgb(18,189,177);
+    margin-bottom: 10px;
+}
+.days{
+    color: rgb(130,164,21);
+}
+#btn{
+    background-color: rgb(102,153,0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+.community p{
+    margin: 10px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+.why-us-header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#doller{
+    font-size: 2rem;
+}
