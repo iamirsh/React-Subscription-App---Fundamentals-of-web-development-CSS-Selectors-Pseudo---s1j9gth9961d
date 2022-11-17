@@ -1,65 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color:rgb(24,42,59);
+
+#main {
+    background-color: rgb(24, 42, 59);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
-.container{
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+.container {
+    border: 1px solid black;
     border-radius: 11px;
-    margin: 10%;
-    
+    background-color: white;
+    overflow: hidden;
 }
-.community{
+
+.community {
+    text-align: center;
+    padding: 1.5rem;
     background-color: rgb(255, 253, 253);
-    text-align: center;
-    padding: 10%;
-    border-radius:11px 11px 0 0;
 }
-.why-us{
+
+.community-title-meta {
+    color: rgb(101, 155, 59);
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+
+
+.community-header {
+    color: rgb(110, 241, 254);
+}
+
+.community-desciption {
+    max-width: 60ch;
+    line-height: 1.5;
+    color: rgb(155, 166, 189);
+    font-weight: 600;
+}
+
+.why-us {
     background-color: rgba(85, 145, 142, 0.698);
-    padding: 12%;
-    border-radius:0 0 11px 0;
+    flex-grow: 1;
+    color: #fff;
     text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
 }
-.card{
+
+.card {
     background-color: rgb(15, 67, 66);
-    padding: 12%;
-    border-radius:0 0 0 11px;
-}
-.card-details{
-    color: white;
+    flex-grow: 1;
+    color: #fff;
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
-.community-header{
-    color: rgb(18,189,177);
-    margin-bottom: 10px;
+
+.card-header {
+    margin: 1.33rem;
+    font-weight: 600;
 }
-.days{
-    color: rgb(130,164,21);
+
+.price {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
-#btn{
-    background-color: rgb(102,153,0);
-    color: white;
+
+.card-details {
+    display: flex;
+}
+
+.sign-up-btn {
+    background-color: rgb(102, 153, 0);
+    color: #fff;
+    outline: none;
     border: none;
-    border-radius: 5px;
-    padding: 5px 30px;
+    padding: 0.5rem 2rem;
+    border-radius: 11px;
+    margin-top: 1rem;
+    min-width: 10rem;
 }
-.community p{
-    margin: 10px;
-}
-.card p{
-    margin-bottom: 20px;
-}
-.why-us-header{
-    text-align: center;
-    margin-bottom: 15px;
-}
-#doller{
-    font-size: 2rem;
+
+@media (max-width: 600px) {
+    /* max-width: 600px --> apply css to those screen whose width is 600px or below */
+    .card-details {
+        flex-direction: column;
+    }
 }
